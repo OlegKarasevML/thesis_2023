@@ -7,7 +7,18 @@ Then you should prepare your dataset. To do this, use .py module dataset-creator
 Train yolo v8
 
 ```bash
-yolo task=<detect or segment> mode=train model=<path/to/yolo/weights> project=runs/<project_name> batch=32 epochs=250 imgsz=1024 data=<path/to/your/data> optimizer=Adam lr0=1e-3 weight_decay=1e-5
+yolo \
+task=<detect or segment> \
+mode=train \
+model=<path/to/yolo/weights> \
+project=runs/<project_name> \
+batch=32 \
+epochs=250 \
+imgsz=1024 \
+data=<path/to/your/data> \
+optimizer=Adam \
+lr0=1e-3 \
+weight_decay=1e-5
 ```
 
 Train yolo v5
